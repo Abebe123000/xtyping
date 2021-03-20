@@ -1,25 +1,9 @@
+/**
+ * 右矢印キーを押したときに次の番号の画面に遷移する関数
+ */
 function KeyDownFunc(e){
-
-	// ------------------------------------------------------------
-	// 入力情報を取得
-	// ------------------------------------------------------------
-	// キーコード
+	// キーコード取得
 	var key_code = e.keyCode;
-	// Shiftキーの押下状態
-	var shift_key = e.shiftKey;
-	// Ctrlキーの押下状態
-	var ctrl_key = e.ctrlKey;
-	// Altキーの押下状態
-	var alt_key = e.altKey;
-
-	// ------------------------------------------------------------
-	// 出力テスト
-	// ------------------------------------------------------------
-	console.info("code:" + key_code);
-	console.info("shift:" + shift_key);
-	console.info("ctrl" + ctrl_key);
-	console.info("alt:" + alt_key);
-
     //右矢印キー押下時
     if(key_code === 39){
         //現在のアドレスを取得
@@ -34,11 +18,12 @@ function KeyDownFunc(e){
     }
 }
 if(document.addEventListener){
-	// キーボードを押したときに実行されるイベント
+	// キーボードを押したときのイベントを設定
 	document.addEventListener("keydown" , KeyDownFunc);
-
 }
-//画面遷移時にタイピングを開始する関数
+/**
+ * 画面遷移時にタイピングを開始する関数
+ */
 function startTyping(){
     //タイピングを開始するボタンのクリックイベント発火
     document.getElementById("type").click();
