@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "xtyping custom",
+    "version": "1.0.0",
+    "description": "xtypingのタイピングページで右矢印キーを押すと次の画面に遷移できます。",
+    "content_scripts": [
+      {
+        "matches": ["https://x-typing.com/basis/display/no-*"],
+        "js": ["myFunction.js"]
+      }
+    ]
+  }
