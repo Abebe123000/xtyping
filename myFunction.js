@@ -1,11 +1,9 @@
 /**
- * 右矢印キーを押したときに次の番号の画面に遷移する関数
+ * ctrl+spaceを押したときに次の番号の画面に遷移する関数
  */
 function KeyDownFunc(e){
-	// キーコード取得
-	var key_code = e.keyCode;
-    //右矢印キー押下時
-    if(key_code === 39){
+    //ctrl+spaceキー押下時
+    if(e.keyCode === 32 && e.ctrlKey === true){
         //現在のアドレスを取得
         let href = location.href;
         //タイピングページの場合
