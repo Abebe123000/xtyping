@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "xtyping custom",
     "version": "1.0.0",
-    "description": "xtypingのタイピングページでctrl+spaceキーを押すと次の画面に遷移できます。",
+    "description": "xtypingのタイピングページでshift+spaceキーを押すと次の画面に遷移できます。",
     "content_scripts": [
       {
         "matches": ["https://x-typing.com/basis/display/no-*"],

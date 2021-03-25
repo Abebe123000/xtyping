@@ -1,9 +1,9 @@
 /**
- * ctrl+spaceを押したときに次の番号の画面に遷移する関数
+ * shift+spaceを押したときに次の番号の画面に遷移する関数
  */
 function KeyDownFunc(e){
-    //ctrl+spaceキー押下時
-    if(e.keyCode === 32 && e.ctrlKey === true){
+    //shift+spaceキー押下時
+    if(e.keyCode === 32 && e.shiftKey === true){
         //現在のアドレスを取得
         let href = location.href;
         //タイピングページの場合
